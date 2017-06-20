@@ -69,7 +69,9 @@
         <activity android:name=".activity.ChatActivity" />
         <activity android:name=".activity.GroupListActivity" />
         <activity android:name=".activity.AddContactActivity" />
-        <activity android:name=".activity.InviteAcitivity"></activity>
+        <activity android:name=".activity.InviteAcitivity" />
+        <activity android:name=".activity.GroupDetailActivity" />
+        <activity android:name=".activity.PickContactsActivity"></activity>
     </application>
 
 </manifest>
