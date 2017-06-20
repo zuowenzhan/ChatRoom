@@ -51,6 +51,8 @@ public class GroupListActivity extends BaseActvity {
 
         // 联网获取群信息
         getGroupFromHxServier();
+
+        initListener();
     }
     // 联网获取群信息
     private void getGroupFromHxServier() {
