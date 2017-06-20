@@ -20,7 +20,6 @@ import java.util.List;
  * 消息列表界面
  */
 public class ChatFragment extends EaseConversationListFragment {
-
     @Override
     protected void initView() {
         super.initView();
@@ -34,8 +33,8 @@ public class ChatFragment extends EaseConversationListFragment {
                 intent.putExtra(EaseConstant.EXTRA_USER_ID, conversation.conversationId());
 
                 // 当前会话类型为群聊
-                if(conversation.getType() == EMConversation.EMConversationType.GroupChat) {
-                    intent.putExtra(EaseConstant.EXTRA_CHAT_TYPE,EaseConstant.CHATTYPE_GROUP);
+                if (conversation.getType() == EMConversation.EMConversationType.GroupChat) {
+                    intent.putExtra(EaseConstant.EXTRA_CHAT_TYPE, EaseConstant.CHATTYPE_GROUP);
                 }
 
                 getActivity().startActivity(intent);
