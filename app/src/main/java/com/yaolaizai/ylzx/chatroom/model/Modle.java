@@ -39,6 +39,8 @@ public class Modle {
 
         // 初始化用户账号数据库dao
         userAccountDao = new UserAccountDao(mContext);
+
+        EventListener eventListener = new EventListener(mContext);
     }
 
     // 获取用户账号数据库的操作类
@@ -63,7 +65,7 @@ public class Modle {
         }
 
         // 创建数据库的管理类
-        dbManager = new DBManager(mContext, account.getName());
+        dbManager = new DBManager(mContext, account.getHxid());
 
         Log.e("TAG", "登录成功");
     }

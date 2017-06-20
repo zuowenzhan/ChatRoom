@@ -9,8 +9,6 @@ import android.content.SharedPreferences;
 // 保存
 // 读取
 public class SpUtils {
-
-
     public static final String IS_INVITE_NOTIY = "is_invite_notify";
     private static SpUtils instace = new SpUtils();
     private static SharedPreferences mSp = null;
